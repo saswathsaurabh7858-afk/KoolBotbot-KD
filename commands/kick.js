@@ -103,7 +103,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJids, message) {
 
     if (isTryingToKickBot) {
         await sock.sendMessage(chatId, { 
-            text: "I can't kick myself🤖"
+            text: "You can't kick me,🤖"
         }, { quoted: message });
         return;
     }
@@ -116,7 +116,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJids, message) {
         }));
         
         await sock.sendMessage(chatId, { 
-            text: `${usernames.join(', ')} has been kicked successfully!`,
+            text: `${usernames.join(', ')} This Bkl has been kicked successfully!`,
             mentions: usersToKick
         });
     } catch (error) {
