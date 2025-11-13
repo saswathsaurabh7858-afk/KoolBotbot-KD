@@ -62,7 +62,7 @@ async function handleLeaveEvent(sock, id, participants) {
                     .replace(/{group}/g, groupName);
             } else {
                 // Default message if no custom message is set
-                finalMessage = ` *@${displayName}* we will never miss you! `;
+                finalMessage = ` *@${displayName}*Get out, we will never miss you! `;
             }
             
             // Try to send with image first (always try images)
