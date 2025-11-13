@@ -23,7 +23,7 @@ async function demoteCommand(sock, chatId, mentionedJids, message) {
 
             if (!adminStatus.isSenderAdmin) {
                 await sock.sendMessage(chatId, { 
-                    text: '❌ Error: Only group admins can use the demote command.'
+                    text: '❌ Error: Only group admins can use the demote command.Baka!'
                 });
                 return;
             }
@@ -67,7 +67,7 @@ async function demoteCommand(sock, chatId, mentionedJids, message) {
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
+        const demotionMessage = `*『 GROUP DEMOTION,You Undeserving Fat F**K』*\n\n` +
             `👤 *Demoted User${userToDemote.length > 1 ? 's' : ''}:*\n` +
             `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
             `👑 *Demoted By:* @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}\n\n` +
